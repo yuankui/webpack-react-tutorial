@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "yuankui <yuankui64@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.40.2"
+  }
 }

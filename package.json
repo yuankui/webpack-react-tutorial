@@ -16,5 +16,9 @@
     "babel-loader": "^8.0.6",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   }
 }

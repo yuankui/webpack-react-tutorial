@@ -1,4 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+
+
 module.exports = {
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
@@ -47,6 +49,6 @@ module.exports = {
 
   devtool: "source-map",
   devServer: {
-    hot: true
+    hot: true,
   }
 };

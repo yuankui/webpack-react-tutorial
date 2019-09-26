@@ -1,0 +1,9 @@
+pre {
+    background: #F7F6F3;
+    padding: 20px 20px 20px;
+}
+
+pre pre {
+    padding: 0;
+    margin: 0;
+}

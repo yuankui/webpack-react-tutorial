@@ -1,0 +1,13 @@
+ul.public-DraftStyleDefault-ul, ol.public-DraftStyleDefault-ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+blockquote {
+    border-left: 5px solid #4ca8de;
+    color: #555;
+    font-weight: 400;
+    margin: 0;
+    padding: 10px 0 10px 20px;
+    background-color: #e2f2ff;
+}

@@ -1,0 +1,16 @@
+.block-todo {
+    position: relative;
+    padding: 0px 20px;
+}
+
+.block-todo-completed {
+    color: #ABABAB;
+    text-decoration-line: line-through;
+}
+
+.block-todo input[type=checkbox] {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    cursor: pointer;
+}

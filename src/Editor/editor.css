@@ -1,0 +1,42 @@
+@import "plugins/code-plugin/index.css";
+
+.editor {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    cursor: text;
+    padding: 16px;
+    border-radius: 2px;
+    background: #fefefe;
+
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 400;
+    overflow-y: scroll;
+
+    height: calc(100% - 30px);
+}
+
+main.ant-layout-content {
+    overflow-y: hidden;
+}
+
+#DraftEditor-root {
+}
+
+.public-DraftEditorPlaceholder-root {
+    height: 0px;
+    overflow: visible;
+    color: darkgray;
+}
+.public-DraftEditorPlaceholder-inner {
+    width: 500px;
+}
+.DraftEditor-editorContainer {
+    display: block;
+}
+
+.post-bottom-bar {
+    position: absolute;
+    bottom: 0;
+    color: grey;
+}

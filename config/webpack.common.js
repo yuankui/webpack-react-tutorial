@@ -8,24 +8,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.json$/,
-        use: 'json-loader'
-      },
-      {
-        test: /\.(js|jsx)$/,
+        test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
-        }
-      },
-      {
-        test: /\.ts(x?)$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "ts-loader"
-          }
-        ]
+          loader: 'babel-loader'
+        },
       },
       {
         test: /\.html$/,
@@ -46,7 +33,11 @@ module.exports = {
 
   output: {
     path: path.join(__dirname, '../build')
-  }
+  },
 
-  // devtool: "source-map",
+  devtool: "source-map",
+
+  devServer: {
+    hot: true,
+  }
 };

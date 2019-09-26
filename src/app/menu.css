@@ -1,0 +1,16 @@
+.menu-item:hover .plus-icon {
+    opacity: 1;
+}
+
+.menu-item .plus-icon {
+    /*todo update*/
+    opacity: 1;
+    height: 22px;
+    width: 22px;
+    padding: 0px;
+    margin-right: 3px;
+}
+
+.menu-item {
+    user-select: none;
+}

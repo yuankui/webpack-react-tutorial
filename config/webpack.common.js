@@ -1,13 +1,14 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-
-
 module.exports = {
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
-    extensions: [".ts", ".tsx", ".js", ".jsx"]
+    extensions: [".ts", ".tsx", ".js", ".jsx", ".json"]
   },
   module: {
     rules: [
+      {
+        test: /\.json$/,
+        use: 'json-loader'
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -40,12 +41,6 @@ module.exports = {
       },
     ]
   },
-  plugins: [
-    new HtmlWebPackPlugin({
-      template: "./src/index.html",
-      filename: "./index.html"
-    })
-  ],
 
   devtool: "source-map",
   devServer: {

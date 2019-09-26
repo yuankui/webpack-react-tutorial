@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "test": "node src/test/qrcode.js",
+    "main": "webpack --config webpack.main.js --mode production",
     "build": "webpack --mode production"
   },
   "keywords": [],
@@ -28,11 +29,15 @@
     "typescript": "^3.6.3",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.1"
+    "webpack-dev-server": "^3.8.1",
+    "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
+    "electron": "^6.0.10",
+    "electron-devtools-installer": "^2.2.4",
+    "json-loader": "^0.5.7",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "webpack-merge": "^4.2.2"

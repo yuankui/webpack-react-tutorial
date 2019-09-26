@@ -51,7 +51,9 @@ app.on('activate', () => {
 // create main BrowserWindow when electron is ready
 app.on('ready', () => {
     mainWindow = createMainWindow();
-    installExtension(extensions)
+    if (isDevelopment) {
+      installExtension(extensions)
         .then((name) => console.log(`Added Extension:  ${name}`))
         .catch((err) => console.log('An error occurred: ', err));
+    }
 });

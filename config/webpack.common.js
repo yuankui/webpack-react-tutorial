@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
@@ -41,6 +43,10 @@ module.exports = {
       },
     ]
   },
+
+  output: {
+    path: path.join(__dirname, '../build')
+  }
 
   // devtool: "source-map",
 };

@@ -2,11 +2,12 @@
   "name": "webpack-react-tutorial",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/main.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "test": "node src/test/qrcode.js",
-    "main": "webpack --config webpack.main.js --mode production",
+    "build-main": "webpack --config webpack.main.js --mode production",
+    "electron": "electron .",
     "build": "webpack --mode production"
   },
   "keywords": [],

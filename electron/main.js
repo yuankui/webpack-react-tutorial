@@ -19,11 +19,7 @@ function createMainWindow() {
     if (isDevelopment) {
         window.loadURL(`http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`)
     } else {
-        window.loadURL(formatUrl({
-            pathname: path.join(__dirname, 'index.html'),
-            protocol: 'file',
-            slashes: true
-        }))
+        window.loadFile("dist/index.html")
     }
 
     window.on('closed', () => {

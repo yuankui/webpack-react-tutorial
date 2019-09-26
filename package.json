@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --open --mode development",
     "test": "node src/test/qrcode.js",
     "build-main": "webpack --config webpack.main.js --mode development",
-    "electron": "cross-env NODE_ENV=development electron ./electron",
+    "electron": "cross-env NODE_ENV=development PLUGIN=false electron ./electron",
     "build-renderer": "webpack --mode production",
     "build": "yarn build-renderer && yarn build-main",
     "build-electron": "electron-builder --config electron-builder.yml",

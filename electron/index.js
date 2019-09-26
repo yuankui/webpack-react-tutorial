@@ -1,4 +1,4 @@
-import {app, BrowserWindow} from 'electron';
+const {app, BrowserWindow} = require('electron');
 
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
@@ -49,11 +49,11 @@ app.on('activate', () => {
 app.on('ready', () => {
   mainWindow = createMainWindow();
   if (isDevelopment) {
-    const installExtension = require('electron-devtools-installer');
-    const {REDUX_DEVTOOLS, REACT_DEVELOPER_TOOLS} = installExtension;
-    const extensions = [REDUX_DEVTOOLS, REACT_DEVELOPER_TOOLS];
-    installExtension(extensions)
-      .then((name) => console.log(`Added Extension:  ${name}`))
-      .catch((err) => console.log('An error occurred: ', err));
+    // const installExtension = require('electron-devtools-installer');
+    // const {REDUX_DEVTOOLS, REACT_DEVELOPER_TOOLS} = installExtension;
+    // const extensions = [REDUX_DEVTOOLS, REACT_DEVELOPER_TOOLS];
+    // installExtension(extensions)
+    //   .then((name) => console.log(`Added Extension:  ${name}`))
+    //   .catch((err) => console.log('An error occurred: ', err));
   }
 });

@@ -16,6 +16,9 @@ module.exports = {
       filename: "./index.html"
     })
   ],
+  devServer: {
+    port: 8089,
+  }
 };
 
 module.exports = merge(common, module.exports);

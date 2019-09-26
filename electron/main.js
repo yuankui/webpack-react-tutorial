@@ -12,12 +12,9 @@ let mainWindow;
 function createMainWindow() {
     const window = new BrowserWindow({webPreferences: {nodeIntegration: true}});
 
-    if (isDevelopment) {
-        window.webContents.openDevTools()
-    }
 
     if (isDevelopment) {
-        window.loadURL(`http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`)
+        window.loadURL(`http://localhost:8089`)
     } else {
         window.loadFile("dist/index.html")
     }

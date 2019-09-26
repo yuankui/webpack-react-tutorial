@@ -23,6 +23,7 @@
     "babel-loader": "^8.0.6",
     "cross-env": "^6.0.0",
     "css-loader": "^3.2.0",
+    "electron": "^6.0.10",
     "electron-builder": "^21.2.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
@@ -35,15 +36,16 @@
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.1",
-    "electron": "^6.0.10",
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
+    "codemirror": "^5.49.0",
     "electron-devtools-installer": "^2.2.4",
     "json-loader": "^0.5.7",
     "react": "^16.9.0",
+    "react-codemirror2": "^6.0.0",
     "react-dom": "^16.9.0",
     "webpack-merge": "^4.2.2"
   },
